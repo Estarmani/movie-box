@@ -31,7 +31,7 @@ const Series = () => {
 
   return (
     <>
-       <div className="bg-gray-800 text-white p-4">
+       <div className="bg-gray-800 pl-10 pr-10 text-white p-4">
       <h2 className="text-xl">Popular Series</h2>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center my-4">

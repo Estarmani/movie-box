@@ -6,7 +6,7 @@ const Dropdown: React.FC<{ onSort: (sortKey: string) => void }> = ({ onSort }) =
   };
 
   return (
-  <div className="pr-4">
+  <div className="pr-10">
       <select className="p-2 border border-gray-300 rounded mb-4" onChange={handleSortChange}>
       <option value="">Sort by</option>
       <option value="year-desc">Year (Descending)</option>

@@ -2,7 +2,7 @@ import { MovieCardProps } from "../type/Types";
 import Card from "./element/Card";
 
 const MovieCard = ({ title, imageUrl }: MovieCardProps) => (
-  <div className="flex flex-col items-center cursor-pointer">
+  <div className="flex flex-col items-center pl-10 pr-10 cursor-pointer">
     <Card className="w-32 h-48 bg-white flex items-center justify-center relative">
       <img
         src={imageUrl}

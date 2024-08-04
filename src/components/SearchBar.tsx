@@ -6,7 +6,7 @@ const SearchBar: React.FC<{ onSearch: (query: string) => void }> = ({ onSearch }
   };
 
   return (
-    <div className="flex mb-4 pl-4">
+    <div className="flex mb-4 pl-6">
       <input
         type="text"
         placeholder="Search"
