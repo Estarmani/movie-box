@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-gray-800 text-white p-4">
+      <div className="bg-gray-800 text-white p-4 mb-8">
         <h2 className="text-xl">Popular Titles</h2>
       </div>
       <div className="flex items-center space-x-4  p-6">

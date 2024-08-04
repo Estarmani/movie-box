@@ -5,7 +5,7 @@ import { SiMicrosoftstore } from "react-icons/si";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-4">
-      <div className="mb-4 text-sm">
+      <div className=" text-sm">
         <a href="#" className="mr-4">Home</a>
         <a href="#" className="mr-4">Terms and Conditions</a>
         <a href="#" className="mr-4">Privacy Policy</a>
