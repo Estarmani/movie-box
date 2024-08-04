@@ -22,20 +22,17 @@ This is a simple Movie box app built with React, TypeScript, React Query, and Ta
 ### Steps
 
 1. Clone the repository:
-    sh
     git clone https://github.com/Estermani/movie-box.git
     cd movie-box
     
 
 2. Install dependencies:
-    sh
     yarn install
     # or
     npm install
     
 
 3. Start the development server:
-    sh
     yarn dev
     # or
     npm start
