@@ -1,30 +1,114 @@
-# React + TypeScript + Vite
+# Movie Box App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Movie box app built with React, TypeScript, React Query, and Tailwind CSS. It fetches movie and series data, provides search and sorting functionality, and includes pagination.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Components](#components)
+- [Hooks](#hooks)
+- [Utils](#utils)
+- [Styles](#styles)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (>= 20.x)
+- Yarn or npm
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Steps
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+    sh
+    git clone https://github.com/Estermani/movie-box.git
+    cd movie-box
+    
+
+2. Install dependencies:
+    sh
+    yarn install
+    # or
+    npm install
+    
+
+3. Start the development server:
+    sh
+    yarn dev
+    # or
+    npm start
+    
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Usage
+
+### Home Page
+
+- Displays both movies and series card.
+
+### Movies Page
+
+- Displays a list of movies.
+- Includes search and sorting functionality.
+- Pagination is provided to navigate through the list.
+
+### Series Page
+
+- Displays a list of series.
+- Includes search and sorting functionality.
+- Pagination is provided to navigate through the list.
+
+## Features
+
+- Fetching data using React Query
+- Filtering and sorting of data
+- Pagination
+- Responsive design using Tailwind CSS
+- TypeScript for type safety
+
+## Components
+
+### src/components/SearchBar.tsx
+
+A search bar component to filter movies and series by title.
+
+### src/components/Dropdown.tsx
+
+A dropdown component to sort movies and series by title or release year.
+
+### src/components/MovieList.tsx
+
+A component to display a list of movies and series in a grid layout.
+
+### src/components/MovieCard.tsx
+
+A component to display individual movie or series details in a card format.
+
+### src/components/Header.tsx
+
+A header component with navigation links.
+
+## Hooks
+
+### src/hooks/useFetchMovies.ts
+
+A custom hook to fetch movies and series data using React Query.
+
+## Utils
+
+### src/utils/filterAndSortData.ts
+
+A utility function to filter and sort movie and series data based on search term and sort key.
+
+## Styles
+
+### Tailwind CSS
+
+The project uses Tailwind CSS for styling. Configuration is done in tailwind.config.js.
+
+### Global Styles
+
+Custom styles can be added in src/index.css.
